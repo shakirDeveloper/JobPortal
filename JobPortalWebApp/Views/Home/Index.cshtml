@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<JobPortalDTOs.PersonalInformationDto>
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <table border="1" cellpadding="0" cellspacing="0" style="border-color:#efefef" width="50%">
+        <tr height="40px">
+            <td>ID</td>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Mobile</td>
+            <td>Address</td>
+            <td>Last Organisation Name</td>
+            <td>Last Degree Title</td>
+        </tr>
+        @{
+            foreach (var item in Model)
+            {
+                var iD = item.id.ToString();
+                var fullName = item.fullName.ToString();
+                var fatherName = item.fatherName.ToString();
+                var mobile = item.mobileNumber.ToString();
+                var Address = item.address.ToString();
+                var organisation = item.employmentHistories?.LastOrDefault().organisationName;
+                var degreeTitle = item.educationalHistories?.LastOrDefault().degreeTitle;
+                <tr>
+                    <td>@iD</td>
+                    <td>@fullName</td>
+                    <td>@fatherName</td>
+                    <td>@mobile</td>
+                    <td>@Address</td>
+                      <td>@organisation</td>
+                        <td>@degreeTitle</td>
+                </tr>
+            }
+        }
+    </table>
+
+</div>

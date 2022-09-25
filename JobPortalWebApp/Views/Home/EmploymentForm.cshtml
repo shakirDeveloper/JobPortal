@@ -1,0 +1,197 @@
+﻿@{
+    ViewData["Title"] = "EmployeeProfile";
+}
+<script type="text/javascript">
+    var employmentIndex = 0;
+    var educationIndex = 0;
+    // Handle click event on Update button
+    window.onload = function () {
+        document.getElementById("addEmployment").addEventListener('click', addEmployment);
+        document.getElementById("addEducation").addEventListener('click', addEducation);
+    }
+
+    function addEducation() {
+        educationIndex = educationIndex + 1;
+        var html2Add = '<h4>Please enter Educational History ' + (educationIndex + 1) + ' detail: </h4> <div class="form-group mx-sm-3 mb-2">' +
+            '<label for="eduhistorydto[' + employmentIndex + '].degreeTitle"> Degree Title </label>' +
+            '<input type="text" class="form-control" id="educationalHistories[' + employmentIndex + '].degreeTitle" name="educationalHistories[' + employmentIndex + '].degreeTitle" placeholder="Degree Title">' +
+            '</div>' +
+            '<div class="form-group mx-sm-3 mb-2">' +
+            '<label for="eduhistorydto[' + employmentIndex + '].passingYear"> Passing Year </label>' +
+            '<input type="text" class="form-control" id="educationalHistories[' + employmentIndex + '].passingYear" name="educationalHistories[' + employmentIndex + '].passingYear" placeholder="Passing Year">' +
+            '</div>' +
+            '<div class="form-group mx-sm-3 mb-2">' +
+            '<label for="eduhistorydto[' + employmentIndex + '].grade"> Grade </label>' +
+            '<input type="text" class="form-control" id="educationalHistories[' + employmentIndex + '].grade" name="educationalHistories[' + employmentIndex + '].grade" placeholder="grade">' +
+            '</div>' +
+            '<div class="form-group mx-sm-3 mb-2">' +
+            '<label for="eduhistorydto[' + employmentIndex + '].majorSubject" > Major subjects </label>' +
+            '<textarea class="form-control" id="educationalHistories[' + employmentIndex + '].majorSubject" name="educationalHistories[' + employmentIndex + '].majorSubject" placeholder="Major Subject" rows="1">' +
+            '</textarea>' +
+            '</div>';
+        $('#educationPanel').append(html2Add);
+
+    }
+    // Handle click event on Add button
+    function addEmployment() {
+        employmentIndex = employmentIndex + 1;
+        var html2Add = '<h4>Please enter Employment History ' + (employmentIndex+1) + ' detail: </h4> <div class="form-group mx-sm-3 mb-2">' +
+            '<label for="emphistorydto[' + employmentIndex + '].organisation">Organisation</label>' +
+            '<input type="text" class="form-control" id="employmentHistories[' + employmentIndex + '].organisationName" name="employmentHistories[' + employmentIndex + '].organisationName" placeholder="Organisation">' +
+            '</div>' +
+            '<div class="form-group mx-sm-3 mb-2">' +
+            '<label for="emphistorydto[' + employmentIndex + '].designation">Designation</label>' +
+            '<input type="text" class="form-control" id="employmentHistories[' + employmentIndex + '].designation" name="employmentHistories[' + employmentIndex + '].designation" placeholder="designation">' +
+            '</div>' +
+            '<div class="form-group mx-sm-3 mb-2">' +
+            '<label for="emphistorydto[' + employmentIndex + '].joiningDate">Joining date</label>' +
+            '<input type="date" class="form-control" id="employmentHistories[' + employmentIndex + '].joiningDate" name="employmentHistories[' + employmentIndex + '].joiningDate" placeholder="joining date">' +
+            ' </div>' +
+            ' <div class="form-group mx-sm-3 mb-2">' +
+            '<label for="emphistorydto[' + employmentIndex + '].endDate">End Date</label>' +
+            '<input type="date" class="form-control" id="employmentHistories[' + employmentIndex + '].endDate" name="employmentHistories[' + employmentIndex + '].endDate" placeholder="end date">' +
+            '</div>' +
+            '<div class="form-group mx-sm-3 mb-2">' +          
+            '<input type="checkbox" class="form-check-input" id="employmentHistories[' + employmentIndex + '].isCurrentJob" name="employmentHistories[' + employmentIndex + '].isCurrentJob">' +
+            '<label class="form-check-label" for="emphistorydto[' + employmentIndex + '].isCurrentJob"> Is Current Job</label>' +
+            '</div>' +
+            '<div class="form-group mx-sm-3 mb-2">' +
+            '<label for="emphistorydto[' + employmentIndex + '].salary">Salary</label>' +
+            '<input type="number" class="form-control" id="employmentHistories[' + employmentIndex + '].salary" name="employmentHistories[' + employmentIndex + '].salary" placeholder="Salary at this job">' +
+            '</div>';
+        $('#employmentPanel').append(html2Add);
+    }
+</script>
+<h3>@ViewBag.Message</h3>
+<form action="home/EmploymentForm" method="post">
+    <h3>Personal Details</h3>
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="nic">Nic</label>
+        <input type="text" class="form-control" id="nic" name="nic" placeholder="Enter Nic">
+    </div>
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="fullName">Full Name</label>
+        <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Full Name">
+    </div>
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="fathername">Father Name</label>
+        <input type="text" class="form-control" id="fathername" name="fathername" placeholder="Father Name">
+    </div>
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="contactnumber">Contact Number</label>
+        <input type="text" class="form-control" id="contactnumber" name="contactnumber" placeholder="Contact Number">
+    </div>
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="mobilenumber">Mobile Number</label>
+        <input type="text" class="form-control" id="mobilenumber" name="mobilenumber" placeholder="Mobile Number">
+    </div>
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="address">Permenent Address</label>
+
+        <textarea class="form-control" id="address" name="address" placeholder="Permenent Address" rows="2">
+            </textarea>
+    </div>
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="domocileId">Domocile</label>
+        <select class="form-control" id="domocileId" name="domocileId">
+            <option value="0">Select domocile</option>
+            <option value="1">Sindh</option>
+            <option value="2">Blochistan</option>
+            <option value="3">KPK</option>
+            <option value="4">Punjab</option>
+        </select>
+    </div>
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="religionId">Religion</label>
+        <select class="form-control" id="religionId" name="religionId">
+            <option value="0">Select religion</option>
+            <option value="1">Islam</option>
+            <option value="2">Christian</option>
+            <option value="3">Hindu</option>
+            <option value="4">No specified</option>
+        </select>
+    </div>
+    <div class="form-group mx-sm-3 mb-2">
+        <label for="cv">Upload CV</label>
+        <input type="file" class="form-control-file" id="cv" name="cv">
+    </div>
+    <br />
+    <br />
+    <h3>Employment History:</h3>
+    <div class="panel-switch" id="employmentPanel">
+        <h4>Please enter Employment History 1 detail: </h4>
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="emphistorydto[0].organisation">Organisation</label>
+            <input type="text" class="form-control" id="employmentHistories[0].organisationName" name="employmentHistories[0].organisationName" placeholder="Organisation">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="emphistorydto[0].designation">Designation</label>
+            <input type="text" class="form-control" id="employmentHistories[0].designation" name="employmentHistories[0].designation" placeholder="designation">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="emphistorydto[0].joiningDate">Joining date</label>
+            <input type="date" class="form-control" id="employmentHistories[0].joiningDate" name="employmentHistories[0].joiningDate" placeholder="joining date">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="emphistorydto[0].endDate">End Date</label>
+            <input type="date" class="form-control" id="employmentHistories[0].endDate" name="employmentHistories[0].endDate" placeholder="end date">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+            <input type="checkbox" class="form-check-input" id="employmentHistories[0].isCurrentJob" name="employmentHistories[0].isCurrentJob">
+            <label class="form-check-label" for="emphistorydto[0].isCurrentJob">
+                Is Current Job
+            </label>
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="emphistorydto[0].salary">Salary</label>
+            <input type="number" class="form-control" id="employmentHistories[0].salary" name="employmentHistories[0].salary" placeholder="Salary at this job">
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-sm-6">
+            <button type="button"
+                    id="addEmployment"
+                    class="btn btn-primary">
+                Add employment
+            </button>
+        </div>
+    </div>
+    <br />
+    <br />
+    <h3>Educational History:</h3>
+    <div class="panel-switch" id="educationPanel">
+        <h4>Please enter Employment History 1 detail: </h4>
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="eduhistorydto[0].degreeTitle">Degree Title</label>
+            <input type="text" class="form-control" id="educationalHistories[0].degreeTitle" name="educationalHistories[0].degreeTitle" placeholder="Degree Title">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="eduhistorydto[0].passingYear">Passing Year</label>
+            <input type="text" class="form-control" id="educationalHistories[0].passingYear" name="educationalHistories[0].passingYear" placeholder="Passing Year">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="eduhistorydto[0].grade">Grade</label>
+            <input type="text" class="form-control" id="educationalHistories[0].grade" name="educationalHistories[0].grade" placeholder="grade">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="eduhistorydto[0].majorSubject">Major subjects</label>
+            <textarea class="form-control" id="educationalHistories[0].majorSubject" name="educationalHistories[0].majorSubject" placeholder="Major Subject" rows="1">
+                </textarea>
+        </div>
+    </div>
+    <br />
+    
+    <div class="row">
+        <div class="col-sm-6">
+            <button type="button"
+                    id="addEducation"
+                    class="btn btn-primary">
+                Add Education
+            </button>
+        </div>
+    </div>
+     <br />
+   <br />
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

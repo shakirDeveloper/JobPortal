@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JobPortal.Interface\JobPortal.Interface.csproj" />
+    <ProjectReference Include="..\JobPortalDAL\JobPortalDAL.csproj" />
+    <ProjectReference Include="..\JobPortalDTOs\JobPortalDTOs.csproj" />
+  </ItemGroup>
+
+</Project>

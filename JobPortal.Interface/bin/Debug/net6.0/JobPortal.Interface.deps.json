@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "JobPortal.Interface/1.0.0": {
+        "dependencies": {
+          "JobPortalDTOs": "1.0.0"
+        },
+        "runtime": {
+          "JobPortal.Interface.dll": {}
+        }
+      },
+      "JobPortalDTOs/1.0.0": {
+        "runtime": {
+          "JobPortalDTOs.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "JobPortal.Interface/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "JobPortalDTOs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,14 @@
+C:\Projects\JobPortal\JobPortal\JobPortalDAL\bin\Debug\net6.0\JobPortalDAL.deps.json
+C:\Projects\JobPortal\JobPortal\JobPortalDAL\bin\Debug\net6.0\JobPortalDAL.runtimeconfig.json
+C:\Projects\JobPortal\JobPortal\JobPortalDAL\bin\Debug\net6.0\JobPortalDAL.dll
+C:\Projects\JobPortal\JobPortal\JobPortalDAL\bin\Debug\net6.0\JobPortalDAL.pdb
+C:\Projects\JobPortal\JobPortal\JobPortalDAL\obj\Debug\net6.0\JobPortalDAL.csproj.AssemblyReference.cache
+C:\Projects\JobPortal\JobPortal\JobPortalDAL\obj\Debug\net6.0\JobPortalDAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\JobPortal\JobPortal\JobPortalDAL\obj\Debug\net6.0\JobPortalDAL.AssemblyInfoInputs.cache
+C:\Projects\JobPortal\JobPortal\JobPortalDAL\obj\Debug\net6.0\JobPortalDAL.AssemblyInfo.cs
+C:\Projects\JobPortal\JobPortal\JobPortalDAL\obj\Debug\net6.0\JobPortalDAL.csproj.CoreCompileInputs.cache
+C:\Projects\JobPortal\JobPortal\JobPortalDAL\obj\Debug\net6.0\JobPortalDAL.dll
+C:\Projects\JobPortal\JobPortal\JobPortalDAL\obj\Debug\net6.0\refint\JobPortalDAL.dll
+C:\Projects\JobPortal\JobPortal\JobPortalDAL\obj\Debug\net6.0\JobPortalDAL.pdb
+C:\Projects\JobPortal\JobPortal\JobPortalDAL\obj\Debug\net6.0\JobPortalDAL.genruntimeconfig.cache
+C:\Projects\JobPortal\JobPortal\JobPortalDAL\obj\Debug\net6.0\ref\JobPortalDAL.dll

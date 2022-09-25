@@ -1,0 +1,12 @@
+C:\Projects\JobPortal\JobPortal\JobPortalDTOs\bin\Release\net6.0\JobPortalDTOs.deps.json
+C:\Projects\JobPortal\JobPortal\JobPortalDTOs\bin\Release\net6.0\JobPortalDTOs.dll
+C:\Projects\JobPortal\JobPortal\JobPortalDTOs\bin\Release\net6.0\JobPortalDTOs.pdb
+C:\Projects\JobPortal\JobPortal\JobPortalDTOs\obj\Release\net6.0\JobPortalDTOs.csproj.AssemblyReference.cache
+C:\Projects\JobPortal\JobPortal\JobPortalDTOs\obj\Release\net6.0\JobPortalDTOs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\JobPortal\JobPortal\JobPortalDTOs\obj\Release\net6.0\JobPortalDTOs.AssemblyInfoInputs.cache
+C:\Projects\JobPortal\JobPortal\JobPortalDTOs\obj\Release\net6.0\JobPortalDTOs.AssemblyInfo.cs
+C:\Projects\JobPortal\JobPortal\JobPortalDTOs\obj\Release\net6.0\JobPortalDTOs.csproj.CoreCompileInputs.cache
+C:\Projects\JobPortal\JobPortal\JobPortalDTOs\obj\Release\net6.0\JobPortalDTOs.dll
+C:\Projects\JobPortal\JobPortal\JobPortalDTOs\obj\Release\net6.0\refint\JobPortalDTOs.dll
+C:\Projects\JobPortal\JobPortal\JobPortalDTOs\obj\Release\net6.0\JobPortalDTOs.pdb
+C:\Projects\JobPortal\JobPortal\JobPortalDTOs\obj\Release\net6.0\ref\JobPortalDTOs.dll

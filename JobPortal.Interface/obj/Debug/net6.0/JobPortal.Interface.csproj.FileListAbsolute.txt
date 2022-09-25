@@ -1,0 +1,15 @@
+C:\Projects\JobPortal\JobPortal\JobPortal.Interface\bin\Debug\net6.0\JobPortal.Interface.deps.json
+C:\Projects\JobPortal\JobPortal\JobPortal.Interface\bin\Debug\net6.0\JobPortal.Interface.dll
+C:\Projects\JobPortal\JobPortal\JobPortal.Interface\bin\Debug\net6.0\JobPortal.Interface.pdb
+C:\Projects\JobPortal\JobPortal\JobPortal.Interface\bin\Debug\net6.0\JobPortalDTOs.dll
+C:\Projects\JobPortal\JobPortal\JobPortal.Interface\bin\Debug\net6.0\JobPortalDTOs.pdb
+C:\Projects\JobPortal\JobPortal\JobPortal.Interface\obj\Debug\net6.0\JobPortal.Interface.csproj.AssemblyReference.cache
+C:\Projects\JobPortal\JobPortal\JobPortal.Interface\obj\Debug\net6.0\JobPortal.Interface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\JobPortal\JobPortal\JobPortal.Interface\obj\Debug\net6.0\JobPortal.Interface.AssemblyInfoInputs.cache
+C:\Projects\JobPortal\JobPortal\JobPortal.Interface\obj\Debug\net6.0\JobPortal.Interface.AssemblyInfo.cs
+C:\Projects\JobPortal\JobPortal\JobPortal.Interface\obj\Debug\net6.0\JobPortal.Interface.csproj.CoreCompileInputs.cache
+C:\Projects\JobPortal\JobPortal\JobPortal.Interface\obj\Debug\net6.0\JobPortal.Interface.csproj.CopyComplete
+C:\Projects\JobPortal\JobPortal\JobPortal.Interface\obj\Debug\net6.0\JobPortal.Interface.dll
+C:\Projects\JobPortal\JobPortal\JobPortal.Interface\obj\Debug\net6.0\refint\JobPortal.Interface.dll
+C:\Projects\JobPortal\JobPortal\JobPortal.Interface\obj\Debug\net6.0\JobPortal.Interface.pdb
+C:\Projects\JobPortal\JobPortal\JobPortal.Interface\obj\Debug\net6.0\ref\JobPortal.Interface.dll
